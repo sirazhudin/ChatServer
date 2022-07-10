@@ -53,6 +53,7 @@ public class Client implements Runnable {
                     server.sendMessage(this.name, ((input.split("::"))));
                 } else server.sendAll(this.name + ":" + input);
                 out.println("Type 'bye' to end the session .");
+                out.println("To send a message to one user use fomat ID/Name::message");
                 input = in.nextLine();
             }
             socket.close();
